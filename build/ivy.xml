@@ -1,0 +1,23 @@
+<ivy-module version="2.0">
+
+  <info
+    organisation="uk.ac.gate"
+    module="gate-plugin-tagger-syntaxnet"
+    revision="1.0-SNAPSHOT">
+    <description homepage="https://github.com/GateNLP/gateplugin-Tagger_SyntaxNet/" />
+  </info>
+
+  <configurations>
+    <conf name="default" />
+  </configurations>
+
+  <dependencies defaultconf="*->master(default),runtime(default)" >
+    <dependency org="com.google.protobuf" name="protobuf-java" rev="3.0.0" />
+    <dependency org="io.grpc" name="grpc-protobuf" rev="1.0.0"/>
+    <dependency org="io.grpc" name="grpc-stub" rev="1.0.0"/>
+    <dependency org="io.grpc" name="grpc-netty" rev="1.0.0" />
+    <dependency org="com.google.guava" name="guava" rev="19.0" />
+    <dependency org="junit" name="junit" rev="4.12" />
+  </dependencies>
+</ivy-module>
+

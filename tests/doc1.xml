@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<GateDocument version="3">
+<!-- The document's features-->
+
+<GateDocumentFeatures>
+<Feature>
+  <Name className="java.lang.String">gate.SourceURL</Name>
+  <Value className="java.lang.String">created from String</Value>
+</Feature>
+</GateDocumentFeatures>
+<!-- The document content area with serialized nodes -->
+
+<TextWithNodes>Democratic presidential candidate Hillary Clinton has selected Tim Kaine, a moderate senator from Virginia, as her running mate.
+Mrs Clinton broke the news in a tweet to her supporters. She plans a formal announcement on Saturday.
+Mrs Clinton passed over more left-leaning candidates in favour of the 58-year-old senator who opposes abortion and supports free-trade agreements.
+His home state of Virginia is a major battleground in the coming election.</TextWithNodes>
+<!-- The default annotation set -->
+
+<AnnotationSet>
+</AnnotationSet>
+
+</GateDocument>
