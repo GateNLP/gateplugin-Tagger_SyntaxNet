@@ -10,13 +10,2264 @@
 </GateDocumentFeatures>
 <!-- The document content area with serialized nodes -->
 
-<TextWithNodes><Node id="0"/>Democratic presidential candidate Hillary Clinton has selected Tim Kaine, a moderate senator from Virginia, as her running mate.
-Mrs Clinton broke the news in a tweet to her supporters. She plans a formal announcement on Saturday.<Node id="230"/>
-<Node id="231"/>Mrs Clinton passed over more left-leaning candidates in favour of the 58-year-old senator who opposes abortion and supports free-trade agreements.
-His home state of Virginia is a major battleground in the coming election.<Node id="452"/></TextWithNodes>
+<TextWithNodes><Node id="0"/>Democratic<Node id="10"/> <Node id="11"/>presidential<Node id="23"/> <Node id="24"/>candidate<Node id="33"/> <Node id="34"/>Hillary<Node id="41"/> <Node id="42"/>Clinton<Node id="49"/> <Node id="50"/>has<Node id="53"/> <Node id="54"/>selected<Node id="62"/> <Node id="63"/>Tim<Node id="66"/> <Node id="67"/>Kaine<Node id="72"/>,<Node id="73"/> <Node id="74"/>a<Node id="75"/> <Node id="76"/>moderate<Node id="84"/> <Node id="85"/>senator<Node id="92"/> <Node id="93"/>from<Node id="97"/> <Node id="98"/>Virginia<Node id="106"/>,<Node id="107"/> <Node id="108"/>as<Node id="110"/> <Node id="111"/>her<Node id="114"/> <Node id="115"/>running<Node id="122"/> <Node id="123"/>mate<Node id="127"/>.<Node id="128"/>
+<Node id="129"/>Mrs<Node id="132"/> <Node id="133"/>Clinton<Node id="140"/> <Node id="141"/>broke<Node id="146"/> <Node id="147"/>the<Node id="150"/> <Node id="151"/>news<Node id="155"/> <Node id="156"/>in<Node id="158"/> <Node id="159"/>a<Node id="160"/> <Node id="161"/>tweet<Node id="166"/> <Node id="167"/>to<Node id="169"/> <Node id="170"/>her<Node id="173"/> <Node id="174"/>supporters.<Node id="185"/> <Node id="186"/>She<Node id="189"/> <Node id="190"/>plans<Node id="195"/> <Node id="196"/>a<Node id="197"/> <Node id="198"/>formal<Node id="204"/> <Node id="205"/>announcement<Node id="217"/> <Node id="218"/>on<Node id="220"/> <Node id="221"/>Saturday<Node id="229"/>.<Node id="230"/>
+<Node id="231"/>Mrs<Node id="234"/> <Node id="235"/>Clinton<Node id="242"/> <Node id="243"/>passed<Node id="249"/> <Node id="250"/>over<Node id="254"/> <Node id="255"/>more<Node id="259"/> <Node id="260"/>left-leaning<Node id="272"/> <Node id="273"/>candidates<Node id="283"/> <Node id="284"/>in<Node id="286"/> <Node id="287"/>favour<Node id="293"/> <Node id="294"/>of<Node id="296"/> <Node id="297"/>the<Node id="300"/> <Node id="301"/>58-year-old<Node id="312"/> <Node id="313"/>senator<Node id="320"/> <Node id="321"/>who<Node id="324"/> <Node id="325"/>opposes<Node id="332"/> <Node id="333"/>abortion<Node id="341"/> <Node id="342"/>and<Node id="345"/> <Node id="346"/>supports<Node id="354"/> <Node id="355"/>free-trade<Node id="365"/> <Node id="366"/>agreements<Node id="376"/>.<Node id="377"/>
+<Node id="378"/>His<Node id="381"/> <Node id="382"/>home<Node id="386"/> <Node id="387"/>state<Node id="392"/> <Node id="393"/>of<Node id="395"/> <Node id="396"/>Virginia<Node id="404"/> <Node id="405"/>is<Node id="407"/> <Node id="408"/>a<Node id="409"/> <Node id="410"/>major<Node id="415"/> <Node id="416"/>battleground<Node id="428"/> <Node id="429"/>in<Node id="431"/> <Node id="432"/>the<Node id="435"/> <Node id="436"/>coming<Node id="442"/> <Node id="443"/>election<Node id="451"/>.<Node id="452"/>
+<Node id="453"/>Some<Node id="457"/> <Node id="458"/>1<Node id="459"/> <Node id="460"/>else<Node id="464"/> <Node id="465"/>@<Node id="466"/>and<Node id="469"/> <Node id="470"/>10<Node id="472"/>%<Node id="473"/> <Node id="474"/>of-a-thing<Node id="484"/> <Node id="485"/>?<Node id="486"/>?<Node id="487"/>?<Node id="488"/></TextWithNodes>
 <!-- The default annotation set -->
 
 <AnnotationSet>
+<Annotation Id="128" Type="Token" StartNode="229" EndNode="230">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">112</Value>
+</Feature>
+</Annotation>
+<Annotation Id="129" Type="Sentence" StartNode="129" EndNode="230">
+</Annotation>
+<Annotation Id="130" Type="Token" StartNode="231" EndNode="234">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nn</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Mrs</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">131</Value>
+</Feature>
+</Annotation>
+<Annotation Id="131" Type="Token" StartNode="235" EndNode="242">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nsubj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Clinton</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">132</Value>
+</Feature>
+</Annotation>
+<Annotation Id="132" Type="Token" StartNode="243" EndNode="249">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">ROOT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBD</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">passed</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">151</Value>
+</Feature>
+</Annotation>
+<Annotation Id="133" Type="Token" StartNode="250" EndNode="254">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prt</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">RP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">PRT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">over</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">132</Value>
+</Feature>
+</Annotation>
+<Annotation Id="134" Type="Token" StartNode="255" EndNode="259">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJR</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">more</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">136</Value>
+</Feature>
+</Annotation>
+<Annotation Id="7" Type="Block" StartNode="0" EndNode="230">
+</Annotation>
+<Annotation Id="135" Type="Token" StartNode="260" EndNode="272">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">left-leaning</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">136</Value>
+</Feature>
+</Annotation>
+<Annotation Id="8" Type="Block" StartNode="231" EndNode="488">
+</Annotation>
+<Annotation Id="136" Type="Token" StartNode="273" EndNode="283">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">dobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNS</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">candidates</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">132</Value>
+</Feature>
+</Annotation>
+<Annotation Id="137" Type="Token" StartNode="284" EndNode="286">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">in</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">132</Value>
+</Feature>
+</Annotation>
+<Annotation Id="138" Type="Token" StartNode="287" EndNode="293">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">favour</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">137</Value>
+</Feature>
+</Annotation>
+<Annotation Id="139" Type="Token" StartNode="294" EndNode="296">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">of</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">138</Value>
+</Feature>
+</Annotation>
+<Annotation Id="140" Type="Token" StartNode="297" EndNode="300">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">det</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">the</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">142</Value>
+</Feature>
+</Annotation>
+<Annotation Id="141" Type="Token" StartNode="301" EndNode="312">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">58-year-old</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">142</Value>
+</Feature>
+</Annotation>
+<Annotation Id="142" Type="Token" StartNode="313" EndNode="320">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">senator</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">139</Value>
+</Feature>
+</Annotation>
+<Annotation Id="143" Type="Token" StartNode="321" EndNode="324">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nsubj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">WP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">PRON</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">who</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">144</Value>
+</Feature>
+</Annotation>
+<Annotation Id="144" Type="Token" StartNode="325" EndNode="332">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">rcmod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBZ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">opposes</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">142</Value>
+</Feature>
+</Annotation>
+<Annotation Id="145" Type="Token" StartNode="333" EndNode="341">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">dobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">abortion</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">144</Value>
+</Feature>
+</Annotation>
+<Annotation Id="146" Type="Token" StartNode="342" EndNode="345">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">cc</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">CC</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">CONJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">and</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">144</Value>
+</Feature>
+</Annotation>
+<Annotation Id="147" Type="Token" StartNode="346" EndNode="354">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">conj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBZ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">supports</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">144</Value>
+</Feature>
+</Annotation>
+<Annotation Id="148" Type="Token" StartNode="355" EndNode="365">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">free-trade</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">149</Value>
+</Feature>
+</Annotation>
+<Annotation Id="149" Type="Token" StartNode="366" EndNode="376">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">dobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNS</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">agreements</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">147</Value>
+</Feature>
+</Annotation>
+<Annotation Id="150" Type="Token" StartNode="376" EndNode="377">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">132</Value>
+</Feature>
+</Annotation>
+<Annotation Id="151" Type="Sentence" StartNode="231" EndNode="377">
+</Annotation>
+<Annotation Id="152" Type="Token" StartNode="378" EndNode="381">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">poss</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">PRP$</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">PRON</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">His</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">154</Value>
+</Feature>
+</Annotation>
+<Annotation Id="153" Type="Token" StartNode="382" EndNode="386">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nn</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">home</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">154</Value>
+</Feature>
+</Annotation>
+<Annotation Id="154" Type="Token" StartNode="387" EndNode="392">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nsubj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">state</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">160</Value>
+</Feature>
+</Annotation>
+<Annotation Id="155" Type="Token" StartNode="393" EndNode="395">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">of</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">154</Value>
+</Feature>
+</Annotation>
+<Annotation Id="156" Type="Token" StartNode="396" EndNode="404">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Virginia</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">155</Value>
+</Feature>
+</Annotation>
+<Annotation Id="157" Type="Token" StartNode="405" EndNode="407">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">cop</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBZ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">is</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">160</Value>
+</Feature>
+</Annotation>
+<Annotation Id="158" Type="Token" StartNode="408" EndNode="409">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">det</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">a</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">160</Value>
+</Feature>
+</Annotation>
+<Annotation Id="159" Type="Token" StartNode="410" EndNode="415">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">major</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">160</Value>
+</Feature>
+</Annotation>
+<Annotation Id="160" Type="Token" StartNode="416" EndNode="428">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">ROOT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">battleground</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">166</Value>
+</Feature>
+</Annotation>
+<Annotation Id="161" Type="Token" StartNode="429" EndNode="431">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">in</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">160</Value>
+</Feature>
+</Annotation>
+<Annotation Id="162" Type="Token" StartNode="432" EndNode="435">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">det</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">the</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">164</Value>
+</Feature>
+</Annotation>
+<Annotation Id="163" Type="Token" StartNode="436" EndNode="442">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBG</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">coming</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">164</Value>
+</Feature>
+</Annotation>
+<Annotation Id="164" Type="Token" StartNode="443" EndNode="451">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">election</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">161</Value>
+</Feature>
+</Annotation>
+<Annotation Id="165" Type="Token" StartNode="451" EndNode="452">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">160</Value>
+</Feature>
+</Annotation>
+<Annotation Id="166" Type="Sentence" StartNode="378" EndNode="452">
+</Annotation>
+<Annotation Id="167" Type="Token" StartNode="453" EndNode="457">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">quantmod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Some</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">168</Value>
+</Feature>
+</Annotation>
+<Annotation Id="168" Type="Token" StartNode="458" EndNode="459">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">num</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">CD</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NUM</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">1</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">170</Value>
+</Feature>
+</Annotation>
+<Annotation Id="169" Type="Token" StartNode="460" EndNode="464">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">advmod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">RB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADV</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">else</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">168</Value>
+</Feature>
+</Annotation>
+<Annotation Id="170" Type="Token" StartNode="465" EndNode="466">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nn</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">@</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">174</Value>
+</Feature>
+</Annotation>
+<Annotation Id="171" Type="Token" StartNode="466" EndNode="469">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">cc</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">CC</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">CONJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">and</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">170</Value>
+</Feature>
+</Annotation>
+<Annotation Id="172" Type="Token" StartNode="470" EndNode="472">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">num</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">CD</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NUM</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">10</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">173</Value>
+</Feature>
+</Annotation>
+<Annotation Id="173" Type="Token" StartNode="472" EndNode="473">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">conj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">%</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">170</Value>
+</Feature>
+</Annotation>
+<Annotation Id="174" Type="Token" StartNode="474" EndNode="484">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">ROOT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">of-a-thing</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">178</Value>
+</Feature>
+</Annotation>
+<Annotation Id="175" Type="Token" StartNode="485" EndNode="486">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">?</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">174</Value>
+</Feature>
+</Annotation>
+<Annotation Id="176" Type="Token" StartNode="486" EndNode="487">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">?</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">174</Value>
+</Feature>
+</Annotation>
+<Annotation Id="177" Type="Token" StartNode="487" EndNode="488">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">?</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">174</Value>
+</Feature>
+</Annotation>
+<Annotation Id="178" Type="Sentence" StartNode="453" EndNode="488">
+</Annotation>
+<Annotation Id="88" Type="Token" StartNode="0" EndNode="10">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Democratic</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">90</Value>
+</Feature>
+</Annotation>
+<Annotation Id="89" Type="Token" StartNode="11" EndNode="23">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">presidential</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">90</Value>
+</Feature>
+</Annotation>
+<Annotation Id="90" Type="Token" StartNode="24" EndNode="33">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nn</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">candidate</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">92</Value>
+</Feature>
+</Annotation>
+<Annotation Id="91" Type="Token" StartNode="34" EndNode="41">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nn</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Hillary</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">92</Value>
+</Feature>
+</Annotation>
+<Annotation Id="92" Type="Token" StartNode="42" EndNode="49">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nsubj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Clinton</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">94</Value>
+</Feature>
+</Annotation>
+<Annotation Id="93" Type="Token" StartNode="50" EndNode="53">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">aux</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBZ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">has</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">94</Value>
+</Feature>
+</Annotation>
+<Annotation Id="94" Type="Token" StartNode="54" EndNode="62">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">ROOT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">selected</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">109</Value>
+</Feature>
+</Annotation>
+<Annotation Id="95" Type="Token" StartNode="63" EndNode="66">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nn</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Tim</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">96</Value>
+</Feature>
+</Annotation>
+<Annotation Id="96" Type="Token" StartNode="67" EndNode="72">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">dobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Kaine</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">94</Value>
+</Feature>
+</Annotation>
+<Annotation Id="97" Type="Token" StartNode="72" EndNode="73">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">,</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">,</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">96</Value>
+</Feature>
+</Annotation>
+<Annotation Id="98" Type="Token" StartNode="74" EndNode="75">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">det</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">a</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">100</Value>
+</Feature>
+</Annotation>
+<Annotation Id="99" Type="Token" StartNode="76" EndNode="84">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">moderate</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">100</Value>
+</Feature>
+</Annotation>
+<Annotation Id="100" Type="Token" StartNode="85" EndNode="92">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">appos</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">senator</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">96</Value>
+</Feature>
+</Annotation>
+<Annotation Id="101" Type="Token" StartNode="93" EndNode="97">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">from</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">100</Value>
+</Feature>
+</Annotation>
+<Annotation Id="102" Type="Token" StartNode="98" EndNode="106">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Virginia</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">101</Value>
+</Feature>
+</Annotation>
+<Annotation Id="103" Type="Token" StartNode="106" EndNode="107">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">,</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">,</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">96</Value>
+</Feature>
+</Annotation>
+<Annotation Id="104" Type="Token" StartNode="108" EndNode="110">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">as</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">94</Value>
+</Feature>
+</Annotation>
+<Annotation Id="105" Type="Token" StartNode="111" EndNode="114">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">poss</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">PRP$</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">PRON</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">her</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">107</Value>
+</Feature>
+</Annotation>
+<Annotation Id="106" Type="Token" StartNode="115" EndNode="122">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">running</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">107</Value>
+</Feature>
+</Annotation>
+<Annotation Id="107" Type="Token" StartNode="123" EndNode="127">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">mate</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">104</Value>
+</Feature>
+</Annotation>
+<Annotation Id="108" Type="Token" StartNode="127" EndNode="128">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">punct</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">94</Value>
+</Feature>
+</Annotation>
+<Annotation Id="109" Type="Sentence" StartNode="0" EndNode="128">
+</Annotation>
+<Annotation Id="110" Type="Token" StartNode="129" EndNode="132">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nn</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Mrs</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">111</Value>
+</Feature>
+</Annotation>
+<Annotation Id="111" Type="Token" StartNode="133" EndNode="140">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nsubj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Clinton</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">112</Value>
+</Feature>
+</Annotation>
+<Annotation Id="112" Type="Token" StartNode="141" EndNode="146">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">ROOT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBD</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">broke</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">129</Value>
+</Feature>
+</Annotation>
+<Annotation Id="113" Type="Token" StartNode="147" EndNode="150">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">det</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">the</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">114</Value>
+</Feature>
+</Annotation>
+<Annotation Id="114" Type="Token" StartNode="151" EndNode="155">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">dobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">news</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">112</Value>
+</Feature>
+</Annotation>
+<Annotation Id="115" Type="Token" StartNode="156" EndNode="158">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">in</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">112</Value>
+</Feature>
+</Annotation>
+<Annotation Id="116" Type="Token" StartNode="159" EndNode="160">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">det</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">a</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">117</Value>
+</Feature>
+</Annotation>
+<Annotation Id="117" Type="Token" StartNode="161" EndNode="166">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">tweet</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">115</Value>
+</Feature>
+</Annotation>
+<Annotation Id="118" Type="Token" StartNode="167" EndNode="169">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">to</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">117</Value>
+</Feature>
+</Annotation>
+<Annotation Id="119" Type="Token" StartNode="170" EndNode="173">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">poss</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">PRP$</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">PRON</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">her</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">120</Value>
+</Feature>
+</Annotation>
+<Annotation Id="120" Type="Token" StartNode="174" EndNode="185">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNS</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">supporters.</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">118</Value>
+</Feature>
+</Annotation>
+<Annotation Id="121" Type="Token" StartNode="186" EndNode="189">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">nsubj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">PRP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">PRON</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">She</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">122</Value>
+</Feature>
+</Annotation>
+<Annotation Id="122" Type="Token" StartNode="190" EndNode="195">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">ccomp</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">VBZ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">VERB</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">plans</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">112</Value>
+</Feature>
+</Annotation>
+<Annotation Id="123" Type="Token" StartNode="196" EndNode="197">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">det</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">DT</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">DET</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">a</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">125</Value>
+</Feature>
+</Annotation>
+<Annotation Id="124" Type="Token" StartNode="198" EndNode="204">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">amod</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">JJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADJ</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">formal</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">125</Value>
+</Feature>
+</Annotation>
+<Annotation Id="125" Type="Token" StartNode="205" EndNode="217">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">dobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">announcement</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">122</Value>
+</Feature>
+</Annotation>
+<Annotation Id="126" Type="Token" StartNode="218" EndNode="220">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">prep</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">IN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">ADP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">on</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">125</Value>
+</Feature>
+</Annotation>
+<Annotation Id="127" Type="Token" StartNode="221" EndNode="229">
+<Feature>
+  <Name className="java.lang.String">label</Name>
+  <Value className="java.lang.String">pobj</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">tag</Name>
+  <Value className="java.lang.String">NNP</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">category</Name>
+  <Value className="java.lang.String">NOUN</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">word</Name>
+  <Value className="java.lang.String">Saturday</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">breaklevel</Name>
+  <Value className="java.lang.String">SPACE_BREAK</Value>
+</Feature>
+<Feature>
+  <Name className="java.lang.String">headId</Name>
+  <Value className="java.lang.Integer">126</Value>
+</Feature>
+</Annotation>
 </AnnotationSet>
 
 <!-- Named annotation set -->
@@ -24,7 +2275,7 @@ His home state of Virginia is a major battleground in the coming election.<Node 
 <AnnotationSet Name="Original markups">
 <Annotation Id="7" Type="Block" StartNode="0" EndNode="230">
 </Annotation>
-<Annotation Id="8" Type="Block" StartNode="231" EndNode="452">
+<Annotation Id="8" Type="Block" StartNode="231" EndNode="488">
 </Annotation>
 </AnnotationSet>
 

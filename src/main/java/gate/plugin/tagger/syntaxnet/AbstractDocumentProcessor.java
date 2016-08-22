@@ -72,7 +72,7 @@ public abstract class AbstractDocumentProcessor
       throw new GateRuntimeException("PR was interrupted");
     }
     seenDocuments += 1;
-    System.err.println("DEBUG: processing document: "+document.getName());
+    //System.err.println("DEBUG: processing document: "+document.getName());
     process(getDocument());
   }
 

@@ -111,6 +111,8 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
     // Need to set the classloader here because the thread context classloader is what
     // grpc uses to dynamically load the correct ManagedChannel provider. By default
     // this is the original URL classloader which does not know about the plugin-jars.
+    ClassLoader oldLoader = Thread.currentThread().getContextClassLoader();
+    
     Thread.currentThread().setContextClassLoader(this.getClass().getClassLoader());
     
     ManagedChannel channel = null;
@@ -120,6 +122,8 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
             usePlaintext(true).build();
     } catch (Exception ex) {
       throw new GateRuntimeException("Could not obtain channel",ex);
+    } finally {
+      Thread.currentThread().setContextClassLoader(oldLoader);
     }
 
     // NOTE: getting the stub currently only works if the protob 
@@ -130,7 +134,11 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
     } catch (Exception ex) {
       ex.printStackTrace(System.out);
       throw new GateRuntimeException("Error creating stub",ex);
+    } finally {
+      Thread.currentThread().setContextClassLoader(oldLoader);
     }
+    
+    Thread.currentThread().setContextClassLoader(oldLoader);
     return stub;
 
   } 
@@ -153,7 +161,7 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
 
   @Override
   protected Document process(Document document) {
-    System.err.println("DEBUG: processing document "+document.getName());
+    //System.err.println("DEBUG: processing document "+document.getName());
     if(isInterrupted()) {
       interrupted = false;
       throw new GateRuntimeException("Processing has been interrupted");
@@ -163,42 +171,62 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
     // to the multiple responses (for each sentence) we get back. So we could add three texts
     // and then get back 8 sentences and the token offsets for each sentence would be relative
     // to the start of the sentence. 
-    ParseyApi.ParseyRequest.Builder b =ParseyApi.ParseyRequest.newBuilder(); 
+    
     if(getContainingAnnotationType() != null && !getContainingAnnotationType().isEmpty()) {
       AnnotationSet anns = document.getAnnotations(getInputAnnotationSet()).get(getContainingAnnotationType());
-      System.err.println("DEBUG: containing annotations: "+anns.size());
+      //System.err.println("DEBUG: containing annotations: "+anns.size());
       for(Annotation ann : anns) {
         String text = gate.Utils.stringFor(document, ann);
-        b.addText(text);       
-        processSpan(b,document,text,Utils.start(ann));
+        processSpan(document,text,Utils.start(ann).intValue());
       }
     } else {
       String text = document.getContent().toString();
-      b.addText(text);
-      processSpan(b,document,text,0L);
+      processSpan(document,text,0);
     }
     return document;
   }
   
-  public void processSpan(ParseyApi.ParseyRequest.Builder b, 
-          Document document, String text, long spanOffset) {
+  public void processSpan(Document document, String text, int spanOffset) {
+    
+    ParseyApi.ParseyRequest.Builder b =ParseyApi.ParseyRequest.newBuilder(); 
+    b.addText(text);       
     ParseyApi.ParseyResponse resp = stub.parse(b.build());
     List<Sentence> sentences = resp.getResultList();
     AnnotationSet outset = document.getAnnotations(getOutputAnnotationSet());
-    System.err.println("DEBUG annotating span at "+spanOffset);
-    long runningOffset = 0;
+    //System.err.println("DEBUG annotating span at "+spanOffset);
+    //System.err.println("DEBUG: text / length:                >"+text+"< "+text.length());
+    
+    // NOTE: the offsets we get back from the syntaxnet server are complete rubbish: 
+    // whitespace is not counted, but sometimes the start offset of the next token is
+    // more than one bigger than the end offset of the preceding token (the end offset
+    // for syntaxnet is the offset of the last character, not of the next one as with gate). 
+    
+    // There is no relyable way to make use of the offsets we get, so the only way to 
+    // find the correct offsets for the annotations is to sequentially figure out the 
+    // correct start offset by trying to match the token text. However, how to do this
+    // right and robustly depends on the details of what we can actually get back from
+    // the server which we do not know. So the following code is based on the assumption
+    // that we always get the sentences and tokens back in original order, and that
+    // at most one token for non-whitespace text is missing.
+    //
+    // The algorithm roughly does this:
+    // = go through all the tokens we get
+    // = in the gate document span, skip through whitespace then try to match the token
+    //   if we cannot match, skip over the non-whitespace text then whitespace then 
+    //   try to match again: if this also fails, abort
+    // = once we match create the annotation. 
+    // Every time we start with a new sentence, we also remember the first token start as the
+    // sentence beginning and when we are finished with all tokens for that sentence, the last
+    // token end as the end of the sentence and create the sentence annotation for this.
+
+    // the running offset is the offset of where the last/current token starts in the gate 
+    // document, relative to the span we are processing
+    int runningOffset = 0;
+
     for(int i=0;i<sentences.size();i++) {
       Sentence s = sentences.get(i);
       String sentenceText = s.getText();
-      System.err.println("DEBUG: Processing sentence with text >"+sentenceText+"<");
-      System.err.println("DEBUG: text / length:                >"+text+"< "+text.length());
-      System.err.println("DEBUG: start/length/end: "+(spanOffset+runningOffset)+"/"+sentenceText.length()+"/"+
-              (spanOffset+runningOffset+sentenceText.length()));
-      
-      // create an annotation for the whole sentence. The id of this annotation will
-      // be used for the head of the token which has head id -1 (the root)
-      int sid = Utils.addAnn(outset, spanOffset+runningOffset, spanOffset+runningOffset+sentenceText.length(),
-              "Sentence", Utils.featureMap());
+      //System.err.println("DEBUG: Processing sentence with text >"+sentenceText+"<");
       
       // The dependency parses represent edges as numbers of other tokens in
       // the token sequence. We replace this by referring to the annotation
@@ -208,16 +236,35 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
       // creating the edge annotations using the parallel list to get the annotation ids. 
 
       List<Annotation> tokenAnns = new ArrayList<Annotation>(s.getTokenList().size());
+      long endOffset = -1;
+      long firstStartOffset = -1;
       for(Token token : s.getTokenList()) {
-        System.err.println("Processing token: "+token);
-        long startOffset = spanOffset + runningOffset + token.getStart();
-        long endOffset = spanOffset + runningOffset + token.getEnd() + 1;
+        //System.err.println("Processing token: "+token);
+        String word = token.getWord();
+        int tlen = word.length();
+        // now find the actual start of this token
+        // first skip over any whitespace
+        int runningOffsetOrig = runningOffset;
+        while(Character.isWhitespace(text.charAt(runningOffset))) {
+          runningOffset++;
+        }
+        if(!text.regionMatches(runningOffset, word, 0, tlen)) {
+          // TODO: retry by skipping over non-whitespace text once!
+          //System.err.println("Word is >"+word+"<");
+          //System.err.println("Text now is "+text.substring(runningOffset));
+          throw new GateRuntimeException("Could not match token "+token+" at or after text "+text.substring(runningOffsetOrig));
+        }
+        
+        long startOffset = spanOffset + runningOffset;
+        endOffset = startOffset + tlen;
+        if(firstStartOffset == -1) {
+          firstStartOffset = startOffset;
+        }
         FeatureMap fm = Factory.newFeatureMap();
         token.getCategory();
         String label = token.getLabel();
         String tag = token.getTag();
         String pos = token.getCategory();
-        String word = token.getWord();
         String breaklevel = token.getBreakLevel().toString();
         fm.put("word",word);
         fm.put("category",pos);
@@ -225,8 +272,15 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
         fm.put("tag",tag);
         fm.put("breaklevel",breaklevel);
         int id = gate.Utils.addAnn(outset, startOffset, endOffset, "Token", fm);
-        tokenAnns.add(outset.get(id));        
+        tokenAnns.add(outset.get(id));    
+        runningOffset += tlen;
       } // for token : tokens
+      // create an annotation for the whole sentence. The id of this annotation will
+      // be used for the head of the token which has head id -1 (the root)
+      int sid = Utils.addAnn(outset, firstStartOffset, endOffset,
+              "Sentence", Utils.featureMap());
+
+
       // Now add the head pointer as an annotation id
       int j = 0;
       for(Token token : s.getTokenList()) {
@@ -241,7 +295,6 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
         tokenAnn.getFeatures().put("headId", headId);
         j++;
       }
-      runningOffset += sentenceText.length();
     } // for sentence : sentences
 
   }
