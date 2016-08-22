@@ -171,7 +171,7 @@
                     <localList>
                       <string>Block</string>
                     </localList>
-                    <collectionType>java.util.Arrays$ArrayList</collectionType>
+                    <collectionType>java.util.ArrayList</collectionType>
                   </gate.util.persistence.CollectionPersistence>
                 </entry>
               </localMap>
@@ -269,7 +269,7 @@
                 </entry>
                 <entry>
                   <string>containingAnnotationType</string>
-                  <string>Block</string>
+                  <string></string>
                 </entry>
                 <entry>
                   <string>inputAnnotationSet</string>

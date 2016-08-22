@@ -158,44 +158,48 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
       interrupted = false;
       throw new GateRuntimeException("Processing has been interrupted");
     }
-    // For each span add the start offset to the array and add the span to the 
-    // builder
-    List<Long> startOffsets = new ArrayList<Long>();
+    
+    // From tests I could not find an easy way to map multiple texts sent to the service
+    // to the multiple responses (for each sentence) we get back. So we could add three texts
+    // and then get back 8 sentences and the token offsets for each sentence would be relative
+    // to the start of the sentence. 
     ParseyApi.ParseyRequest.Builder b =ParseyApi.ParseyRequest.newBuilder(); 
     if(getContainingAnnotationType() != null && !getContainingAnnotationType().isEmpty()) {
       AnnotationSet anns = document.getAnnotations(getInputAnnotationSet()).get(getContainingAnnotationType());
       System.err.println("DEBUG: containing annotations: "+anns.size());
       for(Annotation ann : anns) {
         String text = gate.Utils.stringFor(document, ann);
-        startOffsets.add(Utils.start(ann));
-        b.addText(text);
+        b.addText(text);       
+        processSpan(b,document,text,Utils.start(ann));
       }
     } else {
       String text = document.getContent().toString();
-      startOffsets.add(0L);
       b.addText(text);
+      processSpan(b,document,text,0L);
     }
-    if(b.getTextCount()==0) {
-      System.err.println("DEBUG: not text to annotation, early termination");
-      return document;
-    }
-    // get the response for all the texts we added to the builder
-    System.err.println("DEBUG: creating and sending request");
+    return document;
+  }
+  
+  public void processSpan(ParseyApi.ParseyRequest.Builder b, 
+          Document document, String text, long spanOffset) {
     ParseyApi.ParseyResponse resp = stub.parse(b.build());
-    System.err.println("DEBUG: got response: "+resp);
     List<Sentence> sentences = resp.getResultList();
-    System.err.println("DEBUG: got sentences: "+sentences);
-    if(sentences.size() != startOffsets.size()) {
-      throw new GateRuntimeException(
-              "Something went wrong: different number of spans / returned sentences: "+
-                      startOffsets.size()+"/"+sentences.size());
-    }
-    
     AnnotationSet outset = document.getAnnotations(getOutputAnnotationSet());
-    
+    System.err.println("DEBUG annotating span at "+spanOffset);
+    long runningOffset = 0;
     for(int i=0;i<sentences.size();i++) {
-      long sentenceOffset = startOffsets.get(i);
       Sentence s = sentences.get(i);
+      String sentenceText = s.getText();
+      System.err.println("DEBUG: Processing sentence with text >"+sentenceText+"<");
+      System.err.println("DEBUG: text / length:                >"+text+"< "+text.length());
+      System.err.println("DEBUG: start/length/end: "+(spanOffset+runningOffset)+"/"+sentenceText.length()+"/"+
+              (spanOffset+runningOffset+sentenceText.length()));
+      
+      // create an annotation for the whole sentence. The id of this annotation will
+      // be used for the head of the token which has head id -1 (the root)
+      int sid = Utils.addAnn(outset, spanOffset+runningOffset, spanOffset+runningOffset+sentenceText.length(),
+              "Sentence", Utils.featureMap());
+      
       // The dependency parses represent edges as numbers of other tokens in
       // the token sequence. We replace this by referring to the annotation
       // by its id instead.
@@ -206,16 +210,20 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
       List<Annotation> tokenAnns = new ArrayList<Annotation>(s.getTokenList().size());
       for(Token token : s.getTokenList()) {
         System.err.println("Processing token: "+token);
-        long startOffset = sentenceOffset + token.getStart();
-        long endOffset = sentenceOffset + token.getEnd();
+        long startOffset = spanOffset + runningOffset + token.getStart();
+        long endOffset = spanOffset + runningOffset + token.getEnd() + 1;
         FeatureMap fm = Factory.newFeatureMap();
         token.getCategory();
         String label = token.getLabel();
         String tag = token.getTag();
         String pos = token.getCategory();
+        String word = token.getWord();
+        String breaklevel = token.getBreakLevel().toString();
+        fm.put("word",word);
         fm.put("category",pos);
         fm.put("label",label);
         fm.put("tag",tag);
+        fm.put("breaklevel",breaklevel);
         int id = gate.Utils.addAnn(outset, startOffset, endOffset, "Token", fm);
         tokenAnns.add(outset.get(id));        
       } // for token : tokens
@@ -224,12 +232,18 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
       for(Token token : s.getTokenList()) {
         Annotation tokenAnn = tokenAnns.get(j);        
         int head = token.getHead();
-        int headId = tokenAnns.get(head).getId();
+        int headId = -99999;
+        if(head == -1) {
+          headId = sid;
+        } else {
+          headId = tokenAnns.get(head).getId();
+        }
         tokenAnn.getFeatures().put("headId", headId);
         j++;
       }
-    }
-    return document;
+      runningOffset += sentenceText.length();
+    } // for sentence : sentences
+
   }
   
 
