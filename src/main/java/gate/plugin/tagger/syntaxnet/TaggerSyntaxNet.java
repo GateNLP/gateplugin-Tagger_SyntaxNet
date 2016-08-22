@@ -266,10 +266,13 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
         String tag = token.getTag();
         String pos = token.getCategory();
         String breaklevel = token.getBreakLevel().toString();
+        // NOTE: this deliberately switches the category and tag features so
+        // that existing GATE pipelines which expect category to contain the Penn tags to work 
+        // out of the box.
         fm.put("word",word);
-        fm.put("category",pos);
+        fm.put("category",tag);
         fm.put("label",label);
-        fm.put("tag",tag);
+        fm.put("tag",pos);
         fm.put("breaklevel",breaklevel);
         int id = gate.Utils.addAnn(outset, startOffset, endOffset, "Token", fm);
         tokenAnns.add(outset.get(id));    
