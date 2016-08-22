@@ -9,4 +9,5 @@
   <IVY>build/ivy.xml</IVY>
   <JAR>lib-static/guava-19.0.jar</JAR>
   <JAR>lib-static/grpc-netty-1.0.0.jar</JAR>
+  <JAR>lib-static/protobuf-java-3.0.0.jar</JAR>
 </CREOLE-DIRECTORY>

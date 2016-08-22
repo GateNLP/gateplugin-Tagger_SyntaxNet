@@ -10,10 +10,8 @@ package gate.plugin.tagger.syntaxnet;
 
 import cali.nlp.ParseyApi;
 import cali.nlp.ParseyServiceGrpc;
-import com.google.common.base.Supplier;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
-import io.grpc.netty.NettyChannelBuilder;
 import java.util.concurrent.TimeUnit;
 import syntaxnet.SentenceOuterClass.Sentence;
 import syntaxnet.SentenceOuterClass.Token;
@@ -30,7 +28,6 @@ import gate.creole.metadata.CreoleResource;
 import gate.creole.metadata.Optional;
 import gate.creole.metadata.RunTime;
 import gate.util.GateRuntimeException;
-import io.grpc.netty.NettyChannelProvider;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -110,72 +107,44 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
   // HELPER METHODS
 
   public ParseyServiceGrpc.ParseyServiceBlockingStub getStub() {
-    System.err.println("DEBUG: creating stub");    
-    /*
-    String className = "com.google.common.base.Supplier";
-    try {
-      Class.forName(className,false,this.getClass().getClassLoader());
-    } catch (Exception ex) {
-      throw new GateRuntimeException("Could not find class "+className);
-    }
-    */
-    //Supplier<List<String>> supplier = null;
+
+    // Need to set the classloader here because the thread context classloader is what
+    // grpc uses to dynamically load the correct ManagedChannel provider. By default
+    // this is the original URL classloader which does not know about the plugin-jars.
+    Thread.currentThread().setContextClassLoader(this.getClass().getClassLoader());
     
     ManagedChannel channel = null;
-    try {
-      
-      channel = new NettyChannelProvider().builderForAddress(getServerAddress(),getServerPort()).usePlaintext(true).build();
-              
-    } catch (Exception ex) {
-      System.err.println("DEBUG: Ignored stack trace:");
-      ex.printStackTrace(System.err);
-    }
-
     try {
       if(channel==null) channel = ManagedChannelBuilder.
             forAddress(getServerAddress(), getServerPort()).
             usePlaintext(true).build();
     } catch (Exception ex) {
-      System.err.println("DEBUG: Ignored stack trace:");
-      ex.printStackTrace(System.err);
+      throw new GateRuntimeException("Could not obtain channel",ex);
     }
-      
-    try {
-      if(channel==null) channel = NettyChannelBuilder.
-            forAddress(getServerAddress(), getServerPort()).
-            usePlaintext(true).build();
-      
-    } catch (Exception ex) {
-      System.err.println("DEBUG: Ignored stack trace:");
-      ex.printStackTrace(System.err);      
-    }
-    System.err.println("DEBUG: got channel: "+channel);
-    
-    if(channel==null) {
-      throw new GateRuntimeException("Could not get a channel");
-    }
-    
+
+    // NOTE: getting the stub currently only works if the protob 
+    // jar is in lib-static, not from ivy. Not sure why.
     ParseyServiceGrpc.ParseyServiceBlockingStub stub = null;
     try {
-      stub = ParseyServiceGrpc.newBlockingStub(channel);
+      stub = ParseyServiceGrpc.newBlockingStub(channel);      
     } catch (Exception ex) {
+      ex.printStackTrace(System.out);
       throw new GateRuntimeException("Error creating stub",ex);
     }
-    System.err.println("DEBUG: got stub: "+stub);
     return stub;
 
   } 
 
 
   public void shutdown() {
-    System.err.println("DEBUG: shutting down..");
     if(stub==null) return;
     ManagedChannel channel = (ManagedChannel)stub.getChannel();
     if(channel == null) return;
     try {
       channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
     } catch (InterruptedException ex) {
-      // TODO
+      System.err.println("Problem shutting down the channel, but continuing.");
+      ex.printStackTrace();
     }
 
   } 
@@ -195,6 +164,7 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
     ParseyApi.ParseyRequest.Builder b =ParseyApi.ParseyRequest.newBuilder(); 
     if(getContainingAnnotationType() != null && !getContainingAnnotationType().isEmpty()) {
       AnnotationSet anns = document.getAnnotations(getInputAnnotationSet()).get(getContainingAnnotationType());
+      System.err.println("DEBUG: containing annotations: "+anns.size());
       for(Annotation ann : anns) {
         String text = gate.Utils.stringFor(document, ann);
         startOffsets.add(Utils.start(ann));
@@ -205,6 +175,10 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
       startOffsets.add(0L);
       b.addText(text);
     }
+    if(b.getTextCount()==0) {
+      System.err.println("DEBUG: not text to annotation, early termination");
+      return document;
+    }
     // get the response for all the texts we added to the builder
     System.err.println("DEBUG: creating and sending request");
     ParseyApi.ParseyResponse resp = stub.parse(b.build());
@@ -212,7 +186,9 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
     List<Sentence> sentences = resp.getResultList();
     System.err.println("DEBUG: got sentences: "+sentences);
     if(sentences.size() != startOffsets.size()) {
-      throw new GateRuntimeException("Something went wrong: different number of spans and returned sentences");
+      throw new GateRuntimeException(
+              "Something went wrong: different number of spans / returned sentences: "+
+                      startOffsets.size()+"/"+sentences.size());
     }
     
     AnnotationSet outset = document.getAnnotations(getOutputAnnotationSet());
@@ -229,6 +205,7 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
 
       List<Annotation> tokenAnns = new ArrayList<Annotation>(s.getTokenList().size());
       for(Token token : s.getTokenList()) {
+        System.err.println("Processing token: "+token);
         long startOffset = sentenceOffset + token.getStart();
         long endOffset = sentenceOffset + token.getEnd();
         FeatureMap fm = Factory.newFeatureMap();
