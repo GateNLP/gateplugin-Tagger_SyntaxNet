@@ -250,8 +250,8 @@ public class TaggerSyntaxNet extends AbstractDocumentProcessor {
         }
         if(!text.regionMatches(runningOffset, word, 0, tlen)) {
           // TODO: retry by skipping over non-whitespace text once!
-          //System.err.println("Word is >"+word+"<");
-          //System.err.println("Text now is "+text.substring(runningOffset));
+          System.err.println("Word is >"+word+"<");
+          System.err.println("Text now is "+text.substring(runningOffset));
           throw new GateRuntimeException("Could not match token "+token+" at or after text "+text.substring(runningOffsetOrig));
         }
         
